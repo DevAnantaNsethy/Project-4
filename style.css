@@ -12,10 +12,20 @@
   z-index: 1000;
 }
 
-/* Logo */
-.logo img {
-  height: 40px;
-  cursor: pointer;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1693e0;
+  letter-spacing: 1px;
 }
 
 /* Search Bar */
