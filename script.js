@@ -25,3 +25,16 @@ carousels.forEach(container => {
     carousel.scrollBy({ left: 300, behavior: "smooth" });
   });
 });
+
+// Footer-specific JavaScript
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.querySelector(".footer-bottom p");
+  if (yearSpan) {
+    yearSpan.innerHTML = `&copy; ${new Date().getFullYear()} QuickCart. All rights reserved.`;
+  }
+});
+
+
+// Auto-update year
+document.getElementById("year").textContent = new Date().getFullYear();
+

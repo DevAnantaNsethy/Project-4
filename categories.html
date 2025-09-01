@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - Product Listing</title>
+  <link rel="stylesheet" href="categories.css">
+  <script defer src="categories.js"></script>
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar">
+  <!-- Logo -->
+   <div class="logo">
+    
+    <span class="brand-name">QuickCart</span>
+  </div>
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search products...">
+    <button>🔍</button>
+  </div>
+
+  <!-- Links -->
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./categories.html">Categories</a></li>
+    <li><a href="#footer">About</a></li>
+    <li><a href="#">Orders</a></li>
+  </ul>
+
+  <!-- Cart + Profile -->
+  <div class="nav-icons">
+    <div class="cart">
+      🛒 <span id="cart-count">0</span>
+    </div>
+    <div class="profile">
+      <img src="./image/profile.jpg" alt="Profile">
+    </div>
+  </div>
+</nav>
+
+  </header>
+
+  <!-- Page Content -->
+  <!-- Main Categories Section -->
+<main class="container">
+  <!-- Sidebar Filters -->
+  <aside class="sidebar">
+    <h2>Filters</h2>
+
+    <div class="filter-group">
+      <h3>Category</h3>
+      <label><input type="checkbox"> Mobiles</label>
+      <label><input type="checkbox"> Shoes</label>
+      <label><input type="checkbox"> Clothing</label>
+      <label><input type="checkbox"> Bags</label>
+      <label><input type="checkbox"> Home Appliances</label>
+      <label><input type="checkbox"> Skin Care</label>
+    </div>
+
+  <div class="filter-group">
+  <h3>Price</h3>
+  <input type="range" id="priceRange" min="500" max="25000" value="5000">
+  <p>Max: ₹<span id="priceValue">5000</span></p>
+</div>
+
+
+    <div class="filter-group">
+      <h3>Brand</h3>
+      <input type="text" placeholder="Search Brand">
+    </div>
+
+    <button class="apply-btn">Apply Filters</button>
+  </aside>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Product Showcase -->
+  <section class="products">
+  <h2>Explore Categories</h2>
+  <div class="product-grid">
+    <div class="product-box">
+      <img src="./image/electronices.jpg" alt="Electronics">
+      <h3>Electronics</h3>
+      <p>Upto 40% Off on Gadgets!</p>
+    </div>
+    <div class="product-box">
+      <img src="./image/smartphone.png" alt="Smartphones">
+      <h3>Smartphones</h3>
+      <p>Best Deals on Latest Phones</p>
+    </div>
+    <div class="product-box">
+      <img src="./image/sports.png" alt="Sports">
+      <h3>Sports</h3>
+      <p>Gear up with Mega Sale!</p>
+    </div>
+    <div class="product-box">
+      <img src="./image/clothing.png" alt="Clothing">
+      <h3>Clothing</h3>
+      <p>Trendy Fashion Starting at ₹499</p>
+    </div>
+    <div class="product-box">
+      <img src="./image/appliances.png" alt="Home Appliances">
+      <h3>Home Appliances</h3>
+      <p>Discounts up to 60%!</p>
+    </div>
+    <div class="product-box">
+      <img src="./image/skincare.png" alt="Skin Care">
+      <h3>Skin Care</h3>
+      <p>Buy 1 Get 1 Free Deals</p>
+    </div>
+    <div class="product-box">
+      <img src="./image/TV.png" alt="Tv & Appliances">
+      <h3>Skin Care</h3>
+      <p>Buy 1 Get 1 Free Deals</p>
+    </div>
+    <div class="product-box">
+      <img src="./image/more.jpg" alt="More Categories">
+      <h3>More Categories</h3>
+      <p>Explore All Your Needs →</p>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+   <div class="footer-container">
+    <p>&copy; 2025 QuickCart. All rights reserved.</p>
+    
+  </div>
+
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Get to Know Us</h4>
+      <ul>
+        <li><a href="#">About QuickCart</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">QuickCart Science</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Connect with Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Make Money with Us</h4>
+      <ul>
+        <li><a href="#">Sell on QuickCart</a></li>
+        <li><a href="#">Become an Affiliate</a></li>
+        <li><a href="#">Advertise Your Products</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section" id="footer">
+      <h4>Let Us Help You</h4>
+      <ul>
+        <li><a href="#">Your Account</a></li>
+        <li><a href="#">Returns Centre</a></li>
+        <li><a href="#">100% Purchase Protection</a></li>
+        <li><a href="#">QuickCart App Download</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> QuickCart. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
