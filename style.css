@@ -320,6 +320,33 @@
 
 
 
+
+/* ===== Footer ===== */
+footer {
+  background: #0d6efd;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer button {
+  background: #ffd43b;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+footer button:hover {
+  background: #ffc107;
+}
+
+
+/*footer*/
 .site-footer {
   background: #1a1a1a;
   color: #ddd;
@@ -465,3 +492,4 @@
     text-align: center;
   }
 }
+
