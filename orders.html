@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Product Details</title>
-  <link rel="stylesheet" href="product.css">
+  <title>My Orders</title>
+  <link rel="stylesheet" href="orders.css">
 </head>
 <body>
-  
 
 <nav class="navbar">
   <!-- Logo -->
@@ -23,54 +22,32 @@
   <!-- Links -->
   <ul class="nav-links">
     <li><a href="./index.html">Home</a></li>
-  <li><a href="./orders.html">Orders</a></li>
-   
+    <li><a href="./categories.html">Categories</a></li>
+    <li><a href="#footer">About</a></li>
+    <li><a href="./orders.html">Orders</a></li>
   </ul>
 
   <!-- Cart + Profile -->
-  
     <div class="profile">
       <img src="./image/profile.jpg" alt="Profile">
     </div>
   </div>
 
   <!-- Hamburger (only shows on mobile) -->
-  <button class="menu-toggle">☰</button>,
+  <button class="menu-toggle">☰</button>
 </nav>
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
+  <div class="orders-container">
+    <h1>My Cart</h1>
+    <div id="cart-items"></div>
 
-  <div class="product-page">
-    
-    <!-- Left Side - Product Image -->
-    <div class="product-image">
-      <img id="product-image" src="" alt="Product Image">
-    </div>
-
-    <!-- Right Side - Product Info -->
-    <div class="product-info">
-      <h1 id="product-name"></h1>
-      <p id="product-description"></p>
-      <p class="price" id="product-price"></p>
-      
-      <!-- Extra info -->
-      <ul class="features" id="product-features"></ul>
-
-      <!-- Buttons -->
-      <div class="buttons">
-        <button id="cart-btn">🛒 Add to Cart</button>
-        <button id="buy-btn">⚡ Buy Now</button>
-      </div>
+    <div class="cart-summary">
+      <p id="total-price"></p>
+      <button id="checkout-btn">Proceed to Checkout</button>
+      <button id="clear-cart-btn" class="clear-btn">Clear Cart</button>
     </div>
   </div>
 
-  
 <footer class="site-footer" id="footer">
    <div class="footer-container">
     <p>&copy; 2025 QuickCart. All rights reserved.</p>
@@ -146,7 +123,6 @@
     <p>&copy; <span id="year"></span> QuickCart. All rights reserved.</p>
   </div>
 </footer>
-
-  <script src="product.js"></script>
+  <script src="orders.js"></script>
 </body>
 </html>

@@ -9,12 +9,13 @@
 </head>
 <body>
    <!-- Navbar -->
+ 
 <nav class="navbar">
   <!-- Logo -->
-   <div class="logo">
-    
+  <div class="logo">
     <span class="brand-name">QuickCart</span>
   </div>
+
   <!-- Search Bar -->
   <div class="search-bar">
     <input type="text" placeholder="Search products...">
@@ -26,19 +27,27 @@
     <li><a href="./index.html">Home</a></li>
     <li><a href="./categories.html">Categories</a></li>
     <li><a href="#footer">About</a></li>
-    <li><a href="#">Orders</a></li>
+    <li><a href="./orders.html">Orders</a></li>
   </ul>
 
   <!-- Cart + Profile -->
-  <div class="nav-icons">
-    <div class="cart">
-      🛒 <span id="cart-count">0</span>
-    </div>
+
     <div class="profile">
       <img src="./image/profile.jpg" alt="Profile">
     </div>
   </div>
+
+  <!-- Hamburger (only shows on mobile) -->
+  <button class="menu-toggle">☰</button>
 </nav>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 
   </header>
 

@@ -1,15 +1,12 @@
 // Example: Increment cart count dynamically
 let cartCount = 0;
 const cartCountEl = document.getElementById("cart-count");
+ const menuToggle = document.querySelector(".menu-toggle");
+ const navLinks = document.querySelector(".nav-links");
 
-// Simulate adding items
-function addToCart() {
-  cartCount++;
-  cartCountEl.textContent = cartCount;
-}
-document.querySelector(".menu-toggle").addEventListener("click", () => {
-  document.querySelector(".nav-links").classList.toggle("active");
-});
+ menuToggle.addEventListener("click", () => {
+   navLinks.classList.toggle("active");
+ });
 
 
 // Footer-specific JavaScript
